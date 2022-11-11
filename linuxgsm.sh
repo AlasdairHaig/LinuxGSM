@@ -49,7 +49,7 @@ userinput2="${2}"
 # from a different repo and/or branch.
 githubuser="AlasdairHaig"
 githubrepo="LinuxGSM"
-githubbranch="master"
+githubbranch="feature/arksotfserver"
 
 # Check that curl is installed before doing anything
 if [ ! "$(command -v curl 2>/dev/null)" ]; then
