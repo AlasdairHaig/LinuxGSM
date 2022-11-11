@@ -1653,7 +1653,7 @@ fn_info_message_select_engine() {
 	# Display details depending on game or engine.
 	if [ "${shortname}" == "ac" ]; then
 		fn_info_message_ac
-	elif [ "${shortname}" == "ark" ]; then
+	elif [ "${shortname}" == "ark" ] || [ "${shortname}" == "arksotf" ]; then
 		fn_info_message_ark
 	elif [ "${shortname}" == "arma3" ]; then
 		fn_info_message_arma3

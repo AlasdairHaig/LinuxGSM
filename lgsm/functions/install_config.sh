@@ -194,6 +194,14 @@ elif [ "${shortname}" == "ark" ]; then
 	fn_default_config_remote
 	fn_set_config_vars
 	fn_list_config_locations
+elif [ "${shortname}" == "arksotf" ]; then
+    gamedirname="ARKSurvivalOfTheFittest"
+	fn_check_cfgdir
+	array_configs+=(GameUserSettings.ini Game.ini 2TeamGameUserSettings.ini 2TeamGame.ini 4TeamGameUserSettings.ini 4TeamGame.ini)
+	fn_fetch_default_config
+	fn_default_config_remote
+	fn_set_config_vars
+	fn_list_config_locations
 elif [ "${shortname}" == "arma3" ]; then
 	gamedirname="Arma3"
 	fn_check_cfgdir

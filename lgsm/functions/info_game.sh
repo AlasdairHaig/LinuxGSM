@@ -2320,7 +2320,7 @@ zero="${red}0${default}"
 
 if [ "${shortname}" == "ac" ]; then
 	fn_info_game_ac
-elif [ "${shortname}" == "ark" ]; then
+elif [ "${shortname}" == "ark" ] || [ "${shortname}"  == "arksotf" ]; then
 	fn_info_game_ark
 elif [ "${shortname}" == "arma3" ]; then
 	fn_info_game_arma3

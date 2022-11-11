@@ -11,7 +11,7 @@ info_distro.sh
 
 # RAM requirements in megabytes for each game or engine.
 
-if [ "${shortname}" == "ark" ]; then
+if [ "${shortname}" == "ark" ] || [ "${shortname}" == "arksotf" ]; then
 	ramrequirementmb="4000"
 	ramrequirementgb="4"
 elif [ "${shortname}" == "bt" ]; then
