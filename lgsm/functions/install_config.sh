@@ -21,10 +21,10 @@ fn_fetch_default_config() {
 	echo -e ""
 	echo -e "${lightyellow}Downloading ${gamename} Configs${default}"
 	echo -e "================================="
-	echo -e "default configs from https://github.com/GameServerManagers/Game-Server-Configs"
+	echo -e "default configs from https://github.com/AlasdairHaig/Game-Server-Configs"
 	fn_sleep_time
 	mkdir -p "${lgsmdir}/config-default/config-game"
-	githuburl="https://raw.githubusercontent.com/GameServerManagers/Game-Server-Configs/master"
+	githuburl="https://raw.githubusercontent.com/AlasdairHaig/Game-Server-Configs/feature/arksotfserver"
 	for config in "${array_configs[@]}"; do
 		fn_fetch_file "${githuburl}/${gamedirname}/${config}" "${remote_fileurl_backup}" "GitHub" "Bitbucket" "${lgsmdir}/config-default/config-game" "${config}" "nochmodx" "norun" "forcedl" "nohash"
 	done
@@ -197,7 +197,7 @@ elif [ "${shortname}" == "ark" ]; then
 elif [ "${shortname}" == "arksotf" ]; then
     gamedirname="ARKSurvivalOfTheFittest"
 	fn_check_cfgdir
-	array_configs+=(GameUserSettings.ini Game.ini 2TeamGameUserSettings.ini 2TeamGame.ini 4TeamGameUserSettings.ini 4TeamGame.ini)
+	array_configs+=(GameUserSettings.ini Game.ini)
 	fn_fetch_default_config
 	fn_default_config_remote
 	fn_set_config_vars
